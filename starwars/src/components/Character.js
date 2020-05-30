@@ -13,10 +13,10 @@ const StyledDiv = styled.div`
 
 const Character = (props) => {
   return (
-    <StyledDiv key={props.id}>
-      <h2>{props.name}</h2>
-      <p>{props.status}</p>
-      <img src={props.image} alt="character image" />
+    <StyledDiv key={props.character.id}>
+      <h2>{props.character.name}</h2>
+      <p>{props.character.status}</p>
+      <img src={props.character.image} alt="character" />
     </StyledDiv>
   );
 };

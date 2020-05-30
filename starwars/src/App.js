@@ -27,7 +27,7 @@ const App = () => {
   return (
     <div className="App">
       {characters.map((character, index) => {
-        return <Character key={index} character={character} />;
+        return <Character key={index} character={characters} />;
       })}
     </div>
   );
