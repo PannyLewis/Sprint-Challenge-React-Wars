@@ -26,8 +26,8 @@ const App = () => {
 
   return (
     <div className="App">
-      {characters.map((character, index) => {
-        return <Character key={index} character={character} />;
+      {characters.map((item) => {
+        return <Character key={item.id} item={item} />;
       })}
     </div>
   );
